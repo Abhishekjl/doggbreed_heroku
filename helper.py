@@ -11,8 +11,8 @@ from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing.image import load_img,img_to_array
 from tensorflow.python.keras import utils
 current_path = os.getcwd()
-dog_breeds_category_path = os.path.join(current_path, 'static\dog_breeds_category.pickle')
-predictor_model = load_model(r'static\dogbreed.h5')
+dog_breeds_category_path = os.path.join(current_path, 'static/dog_breeds_category.pickle')
+predictor_model = load_model(r'static/dogbreed.h5')
 with open(dog_breeds_category_path, 'rb') as handle:
     dog_breeds = pickle.load(handle)
 
