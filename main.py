@@ -25,6 +25,7 @@ if uploaded_file is not None:
         display_image = display_image.resize((500,300))
         st.image(display_image)
         prediction = predictor(os.path.join('uploaded',uploaded_file.name))
+        print(prediction)
         os.remove('uploaded/'+uploaded_file.name)
         # drawing graphs
         st.text('Predictions :-')
