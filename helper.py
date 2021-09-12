@@ -40,7 +40,7 @@ densenet = DenseNet121(weights = 'imagenet',
 merge = concatenate([inception_resnet,densenet])
 feature_extractor = Model(inputs = input_layer, outputs = merge)
 
-
+print('model loaded')
 def predictor(img_path): # here image is file name 
     # base_path = os.path.join(current_path, 'static\images\cache')
     # path = os.path.join(base_path,image_name)
